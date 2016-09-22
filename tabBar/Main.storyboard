@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Remove View Controller-->
+        <scene sceneID="Htu-pn-nJr">
+            <objects>
+                <viewController id="gHm-hU-SLQ" customClass="RemoveViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cqW-z3-Cu3"/>
+                        <viewControllerLayoutGuide type="bottom" id="tPR-kp-Ue0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5GC-Dk-tuk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="zhanghu.png" translatesAutoresizingMaskIntoConstraints="NO" id="YD9-az-EKZ">
+                                <rect key="frame" x="81" y="105" width="213" height="127"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="zhanghu.png" translatesAutoresizingMaskIntoConstraints="NO" id="brg-a2-Uci">
+                                <rect key="frame" x="26" y="308" width="30" height="30"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mima.png" translatesAutoresizingMaskIntoConstraints="NO" id="uZy-7c-NvP">
+                                <rect key="frame" x="21" y="357" width="40" height="35"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="账户" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3f7-55-TrO">
+                                <rect key="frame" x="69" y="308" width="286" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="itm-7a-9FT">
+                                <rect key="frame" x="69" y="360" width="286" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mima.png" translatesAutoresizingMaskIntoConstraints="NO" id="iIc-ET-T45">
+                                <rect key="frame" x="21" y="415" width="40" height="35"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zdA-xK-9bj">
+                                <rect key="frame" x="69" y="418" width="286" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zem-zT-cuD">
+                                <rect key="frame" x="102" y="476" width="158" height="36"/>
+                                <state key="normal" title="获取验证码"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ev3-NS-DEw">
+                                <rect key="frame" x="108" y="550" width="158" height="36"/>
+                                <state key="normal" title="注册"/>
+                                <connections>
+                                    <action selector="tapLoginOut:" destination="gHm-hU-SLQ" eventType="touchUpInside" id="XXp-CF-L9I"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="countText" destination="3f7-55-TrO" id="0VP-td-ZfV"/>
+                        <outlet property="numText" destination="zdA-xK-9bj" id="FWd-kV-mN5"/>
+                        <outlet property="passwordText" destination="itm-7a-9FT" id="M98-au-yUN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QRs-nV-XhQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="606.5" y="599.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mima.png" width="32" height="32"/>
+        <image name="zhanghu.png" width="32" height="32"/>
+    </resources>
+</document>
